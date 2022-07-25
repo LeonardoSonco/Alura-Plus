@@ -1,0 +1,169 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal), sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.conteiner {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.principal {
+    background-image: url("./img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.conteiner__caixa {
+    margin: 0 6em;
+}
+
+.conteiner-titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.conteiner__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.conteiner__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.conteiner__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+    transform: scale(1.02);
+}
+
+.botao_secundario {
+    margin-top: 10px;
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.conteiner__aviso {
+    font-size: 12px;
+    color:var(--cinza-secundario);
+    text-align: center;
+    
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    margin: 0 6em;
+    align-items: center;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: vat(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__frase {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.conteiner__descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+    height: 100vh;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    display: block;
+    height: auto;
+}
+
+.rodape__imagem:hover{
+    transform: scale(1.1);
+}
+
+.rodape__lista { 
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    margin: 2em;
+}
+
+.lista__link{
+    margin: 0 0.5em;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.lista__link a:hover{
+    color: var(--botao-azul);
+}
+
+.rodape__texto {
+    margin-bottom: 1em;
+    text-align: center;
+    color: var(--cinza-secundario);
+    align-items: flex-start;
+    font-size: 10px;
+}
+
